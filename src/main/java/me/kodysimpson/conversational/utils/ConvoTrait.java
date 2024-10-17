@@ -84,7 +84,7 @@ public class ConvoTrait extends Trait {
         p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BLOCK_HARP, 1, 1);
 
         //Use OpenAI to get a response from GPT-3
-        OpenAiService service = new OpenAiService(API TOKEN HERE, 0);
+        OpenAiService service = new OpenAiService("sk...", 0);
         CompletionRequest request = CompletionRequest.builder()
                 .prompt(this.conversation.toString())
                 .model("text-davinci-003") //Use the latest davinci model
